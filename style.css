@@ -1,0 +1,53 @@
+@media (max-width: 768px) {
+    /* Remove o reposicionamento do menu de design */
+    .design-selection {
+      position: static;
+      float: none;
+      width: 100%;
+    }
+  
+    /* Remove a borda lateral ao lado da div */
+    .page-wrapper {
+      border: none;
+      padding: 0;
+    }
+  
+    /* Muda a orientação do Flexbox para vertical */
+    .main.supporting, .sidebar {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    /* Remove a altura fixa presente no cabeçalho da página */
+    header[role="banner"] {
+      height: auto;
+    }
+  
+    /* Remove o espaçamento inicial dado a cada um dos parágrafos */
+    p {
+      margin-left: 0;
+    }
+  }
+
+
+
+  @media print {
+    /* Altera o estilo da fonte para uma serifada */
+    body {
+      font-family: "Times New Roman", Times, serif;
+    }
+  
+    /* Inverte as cores do banner */
+    header[role="banner"] {
+      background-color: white;
+      color: black;
+    }
+  
+    header[role="banner"] h1, 
+    header[role="banner"] h2 {
+      color: black;
+    }
+  }
+  
+  
